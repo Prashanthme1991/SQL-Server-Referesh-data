@@ -63,7 +63,7 @@ create function [dbo].[valid_refresh] (
 		   refresh_util.log_refresh_action( p_obj_owner, p_object, q_new_object, NA, rec_cnt, getdate()
 		      , EXCEPTION (+ ISNULL(SQLCODE, '') +) "+ " isnull(substring(SQLERRM, 1,200), '') )
 			  
-	end;
+	end;   
 	/*
 	BEGIN TRY
 
